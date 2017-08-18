@@ -5,13 +5,13 @@ img {
     max-width: 100%;
 }
 .hero-section  {
-    margin-top: 128px;
-    margin-bottom: 128px;
+    margin-top: 96px;
+    margin-bottom: 96px;
 }
 .blue-section {
     background: #EBFBFF;
-    padding-top: 128px;
-    padding-bottom: 128px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 .hero-note {
     position: absolute;
@@ -83,10 +83,11 @@ p.lead {
     font-style: italic;
     font-weight: 200;
     line-height: normal;
-    font-size: 26px;
+    font-size: 24px;
     text-align: center;
     position: relative;
     color: #000000;
+    min-height: 174px;
 }
 .testimonial-phrase:before {
     content: '';
@@ -133,4 +134,32 @@ p.lead {
     text-align: center;
     
     color: #CFF5FF;
+}
+.blue-font-phrase {
+    position: absolute;
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 33px;
+    font-size: 32px;
+    text-align: center;
+    
+    color: #333333;
+}
+.media-logos {
+    margin: 50px;
+}
+.form-control {
+    height: 60px !important;
+    
+    background: rgba(255, 255, 255, 0.31);
+    border: 2px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+label {
+
+font-size: 20px;
+
+color: #828282;
 }

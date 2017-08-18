@@ -7,6 +7,7 @@
     <title>UpMe - Comece Profissional</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
 </head>
 <body>
@@ -21,13 +22,15 @@
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav mr-auto">
-
-              <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <ul class="navbar-nav ml-auto">
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <form class="form-inline">
+                    <a href="#convite" class="btn btn-outline-primary">Pedir convite</a>
                 </form>
-            </div>
+            </ul>
         </div>
       </nav>
     </div>
@@ -72,34 +75,34 @@
         <div class="container">
             <div class="row">
                 <div class="col col-md-4 text-center">
-                    <div class="testimonial-phrase">Transforme seus trabalhos de faculdade em uma porta de entrada para o mercado de trabalho </div>
-                    <p class="testimonial-name">Renata, Universitária</p>
+                    <div class="testimonial-phrase">A gente teve contato de fato com o mercado! Além de todo o desenvolvimento pessoal e profissional, a gente conseguiu ainda vender um projeto para a nossa empresa júnior.</div>
+                    <p class="testimonial-name">Maria Júlia, universitária</p>
                     <div class="testimonial-avatar-container">
                         <img src="img/avatar.png" class="testimonial-avatar" alt="">
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#universitaria-modal">
                             <img src="img/play-button.png" class="testimonial-play" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="col col-md-4 text-center">
-                    <div class="testimonial-phrase">Transforme seus trabalhos de faculdade em uma porta de entrada para o mercado de trabalho </div>
-                    <p class="testimonial-name">Renata, Universitária</p>
+                    <div class="testimonial-phrase">Contar com uma ferramenta que conecte a necessidade das empresas com aquilo que os alunos estão precisando aplicar é fenomenal!</div>
+                    <p class="testimonial-name">Graziela, Professora</p>
                     <div class="testimonial-avatar-container">
                         <img src="img/avatar.png" class="testimonial-avatar" alt="">
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#professor-modal">
                             <img src="img/play-button.png" class="testimonial-play" alt="">
                         </a>
                         <img src="img/play-note.png" class="play-note" alt="">
                     </div>
                 </div>
                 <div class="col col-md-4 text-center">
-                    <div class="testimonial-phrase">Transforme seus trabalhos de faculdade em uma porta de entrada para o mercado de trabalho </div>
-                    <p class="testimonial-name">Renata, Universitária</p>
+                    <div class="testimonial-phrase">Foi muito profissional. A gente até se surpreendeu de ver aquelas meninas tão jovens entregando um trabalho muito legal, muito profissional” </div>
+                    <p class="testimonial-name">Rodrigo, empreendedor de Floripa</p>
                     <div class="testimonial-avatar-container">
                         <img src="img/avatar.png" class="testimonial-avatar" alt="">
-                        <a href="#">
+                        <a href="#" data-toggle="modal" data-target="#empresa-modal">
                             <img src="img/play-button.png" class="testimonial-play" alt="">
-                        </a>
+                        </a>    
                     </div>
                 </div>
             </div>
@@ -110,27 +113,55 @@
             <div class="row">
                 <div class="col col-xs-12">
                     <h2 class="sub-title">O que andam falando de nós?</h2>
-                    <img src="img/globo.png" alt="">
-                    <img src="img/g1.png" alt="">
-                    <img src="img/miller-center.png" alt="">
-                    <img src="img/sgb.png" alt="">
+                    <img src="img/globo.png" class="media-logos" alt="">
+                    <img src="img/g1.png" class="media-logos" alt="">
+                    <img src="img/miller-center.png" class="media-logos" alt="">
+                    <img src="img/sgb.png" class="media-logos" alt="">
                 </div>
             </div>
             <div class="row">
                 <div class="col col-xs-12">
                     <h2 class="sub-title">Quem acredita na UpMe!</h2>
-                    <img src="img/seed.png" alt="">
-                    <img src="img/sgb-red.png" alt="">
-                    <img src="img/def.png" alt="">
+                    <img src="img/seed.png" class="media-logos" alt="">
+                    <img src="img/sgb-red.png" class="media-logos" alt="">
+                    <img src="img/def.png" class="media-logos" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="cta">
+    <div class="cta" id="convite">
         <div class="container">
             <div class="row">
                 <div class="col col-md-6">
-                    <div class="bg-blue-font">1.000</div>
+                    <div class="d-flex flex-cloumn align-items-center justify-content-center">
+                        <div class="bg-blue-font">1.000</div>
+                        <div class="blue-font-phrase">Mais de 1.000 universitários.</div>
+                    </div>
+                    <div class="d-flex flex-cloumn align-items-center justify-content-center">
+                        <div class="bg-blue-font">300</div>
+                        <div class="blue-font-phrase">Mais de 300 empresas.</div>
+                    </div>
+                </div>
+                <div class="col col-md-5 ml-md-auto">
+                    <h2 class="huge-title">Tá esperando<br> o quê? Pede logo seu convite! </h2>
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Seu e-mail</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu e-mail">
+                          <small id="emailHelp" class="form-text text-muted">Pode ficar tranquilo, odiamos spam ;)</small>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Você é ?</label>
+                         <select name="" class="form-control" id="">
+                             <option value="1">Aluno(a) 👩🏻‍🎓👨🏾‍🎓</option>
+                             <option value="1">Professor(a) 👩‍🏫👨🏼‍🏫 </option>
+                             <option value="1">Dono(a) de empresa 🤵👩🏾</option>
+                         </select>
+                        </div>
+                       <div class="d-flex justify-content-right">
+                           <button type="submit" class="btn btn-primary btn-blue d-flex">Pedir convite</button>
+                        </div>
+                      </form>
                 </div>
             </div>
         </div>
@@ -138,5 +169,54 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- Modal -->
+    <div class="modal fade" id="universitaria-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Depoimento Maria Júlia, universitária</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="768" height="480" src="https://www.youtube.com/embed/n56fi5ULKxY?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="professor-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Depoimento Maria Júlia, universitária</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <iframe width="768" height="480" src="https://www.youtube.com/embed/M_lhKYArXUw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="empresa-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Depoimento Rodrigo, empreendedor de Floripa</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/luTpthSYKX4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            
+          </div>
+        </div>
+    </div>
 </body>
 </html>
