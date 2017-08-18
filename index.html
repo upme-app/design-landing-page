@@ -9,10 +9,29 @@
     <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <div class="container">
-
+<div class="row">
+    
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="img/logo.png" alt="">
@@ -33,19 +52,21 @@
             </ul>
         </div>
       </nav>
+</div>
+
     </div>
     
     <div class="hero-section">
           <div class="container">
               <div class="row">
                 <div class="col col-md-5">
-                    <h1 class="huge-title">Plataforma <br>que integra universidade<br> e empresas</h1>
+                    <h1 class="huge-title">Uma plataforma <br>que integra universidade<br> e empresas</h1>
                     <p class="lead">conectando os assuntos de cada<br> disciplina com projetos de mercado.</p>
-                    <a href="#" class="btn btn-primary btn-blue">Peça seu convite</a>
+                    <a href="#convite" class="btn btn-primary btn-blue">Peça seu convite</a>
                 </div>
                 <div class="col col-md-7">
                     <img src="img/veja-o-video-hero.png" class="hero-note" alt="">
-                    <img src="img/video.png" alt="">
+                    <iframe width="100%" height="354" src="https://www.youtube.com/embed/ywpooUzHVtk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -75,7 +96,7 @@
         <div class="container">
             <div class="row">
                 <div class="col col-md-4 text-center">
-                    <div class="testimonial-phrase">A gente teve contato de fato com o mercado! Além de todo o desenvolvimento pessoal e profissional, a gente conseguiu ainda vender um projeto para a nossa empresa júnior.</div>
+                    <div class="testimonial-phrase">Além de todo o desenvolvimento pessoal e profissional, a gente conseguiu ainda vender um projeto para a nossa empresa júnior.</div>
                     <p class="testimonial-name">Maria Júlia, universitária</p>
                     <div class="testimonial-avatar-container">
                         <img src="img/avatar.png" class="testimonial-avatar" alt="">
@@ -88,7 +109,7 @@
                     <div class="testimonial-phrase">Contar com uma ferramenta que conecte a necessidade das empresas com aquilo que os alunos estão precisando aplicar é fenomenal!</div>
                     <p class="testimonial-name">Graziela, Professora</p>
                     <div class="testimonial-avatar-container">
-                        <img src="img/avatar.png" class="testimonial-avatar" alt="">
+                        <img src="img/avatar-professor.png" class="testimonial-avatar" alt="">
                         <a href="#" data-toggle="modal" data-target="#professor-modal">
                             <img src="img/play-button.png" class="testimonial-play" alt="">
                         </a>
@@ -97,9 +118,9 @@
                 </div>
                 <div class="col col-md-4 text-center">
                     <div class="testimonial-phrase">Foi muito profissional. A gente até se surpreendeu de ver aquelas meninas tão jovens entregando um trabalho muito legal, muito profissional” </div>
-                    <p class="testimonial-name">Rodrigo, empreendedor de Floripa</p>
+                    <p class="testimonial-name">Rodrigo, Empreendedor</p>
                     <div class="testimonial-avatar-container">
-                        <img src="img/avatar.png" class="testimonial-avatar" alt="">
+                        <img src="img/avatar-empresa.png" class="testimonial-avatar" alt="">
                         <a href="#" data-toggle="modal" data-target="#empresa-modal">
                             <img src="img/play-button.png" class="testimonial-play" alt="">
                         </a>    
@@ -113,18 +134,35 @@
             <div class="row">
                 <div class="col col-xs-12">
                     <h2 class="sub-title">O que andam falando de nós?</h2>
-                    <img src="img/globo.png" class="media-logos" alt="">
-                    <img src="img/g1.png" class="media-logos" alt="">
-                    <img src="img/miller-center.png" class="media-logos" alt="">
-                    <img src="img/sgb.png" class="media-logos" alt="">
+                    <a target="_blank" href="http://g1.globo.com/sc/santa-catarina/sc-que-da-certo/noticia/2016/07/plataforma-de-tecnologia-social-aproxima-universidade-e-mercado.html">
+                        <img src="img/globo.png" class="media-logos" alt="">
+                    </a>
+                    <a target="_blank" href="http://g1.globo.com/sc/santa-catarina/rbs-noticias/videos/t/edicoes/v/iniciativa-conecta-universitarios-ao-mercado-de-trabalho-atraves-da-tecnologia/4960075/">
+                        <img src="img/g1.png" class="media-logos" alt="">
+                    </a>
+                    <a target="_blank" href="https://medium.com/@millersocent/brazilian-social-enterprise-seeks-to-promote-economic-growth-by-linking-university-student-work-890ea9db26cf">
+                        <img src="img/miller-center.png" class="media-logos" alt="">
+                    </a>
+                    <a target="_blank" href="http://socialgoodbrasil.org.br/2016/inturma-unindo-alunos-e-organizacoes-contra-o-desperdicio-de-conhecimento">
+                        <img src="img/sgb.png" class="media-logos" alt="">
+                    </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col col-xs-12">
                     <h2 class="sub-title">Quem acredita na UpMe!</h2>
-                    <img src="img/seed.png" class="media-logos" alt="">
-                    <img src="img/sgb-red.png" class="media-logos" alt="">
-                    <img src="img/def.png" class="media-logos" alt="">
+                    <a target="_blank" href="http://seed.mg.gov.br/">
+                        <img src="img/seed.png" class="media-logos" alt="">
+                    </a>
+                    <a target="_blank" href="http://socialgoodbrasil.org.br/lab/">
+                        <img src="img/sgb-red.png" class="media-logos" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.scu-social-entrepreneurship.org/#home">
+                        <img src="img/GSBI.png" class="media-logos" height="100" alt="">
+                    </a>
+                    <a target="_blank" href="https://www.sebrae.com.br/sites/PortalSebrae/ufs/sc/sebraeaz/programa-negocios-de-impacto-social-sebraesc,8203bc370248c510VgnVCM1000004c00210aRCRD">
+                        <img src="img/def.png" class="media-logos" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -143,7 +181,9 @@
                     </div>
                 </div>
                 <div class="col col-md-5 ml-md-auto">
+                    <img src="img/cta-note.png" class="cta-note" alt="">
                     <h2 class="huge-title">Tá esperando<br> o quê? Pede logo seu convite! </h2>
+                    <img src="img/cta-brush.png" class="cta-brush" alt="">
                     <form>
                         <div class="form-group">
                           <label for="exampleInputEmail1">Seu e-mail</label>
@@ -212,11 +252,14 @@
               </button>
             </div>
             <div class="modal-body">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/luTpthSYKX4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="768" height="480" src="https://www.youtube.com/embed/luTpthSYKX4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
             
           </div>
         </div>
     </div>
+    <footer class="footer text-center">
+        <img src="img/logo-footer.png" alt="">
+    </footer>
 </body>
 </html>

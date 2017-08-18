@@ -46,7 +46,7 @@ p.lead {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    font-size: 20px;
+    font-size: 19px;
     color: #000000;
 }
 .btn-blue {
@@ -67,6 +67,7 @@ p.lead {
 .navbar {
     background-color: transparent !important;
     margin-top: 32px;
+    width: 100%;
 }
 .values {
     margin-bottom: 128px;
@@ -87,7 +88,7 @@ p.lead {
     text-align: center;
     position: relative;
     color: #000000;
-    min-height: 174px;
+    min-height: 124px;
 }
 .testimonial-phrase:before {
     content: '';
@@ -98,7 +99,7 @@ p.lead {
     width: 48px;
     background-repeat: no-repeat;
     left: -20px;
-    top: -10px;
+    top: -24px;
 }
 .testimonial-name {
     margin-top: 20px;
@@ -133,7 +134,7 @@ p.lead {
     font-size: 230px;
     text-align: center;
     
-    color: #CFF5FF;
+    color: #afeeff;
 }
 .blue-font-phrase {
     position: absolute;
@@ -145,6 +146,9 @@ p.lead {
     text-align: center;
     
     color: #333333;
+}
+.media .sub-title {
+    margin-top: 30px;
 }
 .media-logos {
     margin: 50px;
@@ -162,4 +166,23 @@ label {
 font-size: 20px;
 
 color: #828282;
+}
+.footer {
+    margin: 80px 0px 20px 0px;
+}
+.form-inline {
+    margin-left: 24px !important;
+}
+.cta .huge-title {
+    margin-bottom: 30px;
+}
+.cta-note {
+    position: absolute;
+    right: -10px;
+    top: -110px;
+}
+.cta-brush {
+    position: absolute;
+    top: 117px;
+    left: -6px;
 }
